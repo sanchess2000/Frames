@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+          function hello() {
+              ans = document.getElementById("score").value;
+              if (Number(ans) >= 9) alert('Мудро.');
+              else alert('Мы ведь уже знаем, где Вы живёте.')
+          }
+  </script>
+</head>
+<body>
+  <h1>Этой формы не должно было быть. Меня заставили.</h1>
+  <form onsubmit="hello()">
+    <h4>Как Вы оценивате сайт по десятибалльной шкале?</h4>
+    <input type="number" size=2 id="score" value="0">
+    <br>
+    <br>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+          function hello() {
+              n = document.getElementById("user").value
+              if (document.getElementById('q4').checked) alert('Подумайте, ' + n + '.');
+              else alert('Мы в Вас не сомневались, ' + n);
+          }
+      </script>
+</head>
+<body>
+  <h1>Это право верх.</h1>
+  <form onsubmit="hello()">
+    <h4>Как Вас зовут?</h4>
+    <input type="text" size=20 id="user" value="Юзернейм">
+    <br>
+    <br>
+    <h4>Где Вы живёте?</h4>
+    <input type="text" size=20 id="user" value="В Москве">
+    <br>
+    <br>
+    <h4>Вы любите HTML?</h4>
+    <input type=radio id="q1" name=Question value="Yes" checked> Да
+    <input type=radio id="q2" name=Question value="Yes-yes"> Точно да
+    <input type=radio id="q3" name=Question value="Yes-yes-yes"> Разумеется, да
+    <input type=radio id="q4" name=Question value="No"> Нет
+    <br>
+    <br>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>

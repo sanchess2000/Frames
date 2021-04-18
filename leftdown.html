@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+          function hello() {
+              if (document.getElementById('q1').checked) alert('Программисты аппаратными проблемами не занимаются.');
+              else if (document.getElementById('q2').checked)  alert('Криминальный микроэлемент.');
+              else if (document.getElementById('q3').checked) alert('Разумеется. Если до этого он был миллиардером.');
+              else alert('Ну и славно.');
+          }
+  </script>
+</head>
+<body>
+  <h1>Это лево низ</h1>
+  <form onsubmit="hello()">
+    <h4>Хотите шутку?</h4>
+    <input type=radio id="q1" name=Question value="1" checked> Сколько нужно программистов, чтобы вкрутить лампочку?
+    <br>
+    <input type=radio id="q2" name=Question value="2"> Как называют бандита-карлика?
+    <br>
+    <input type=radio id="q3" name=Question value="3"> Может ли женщина сделать мужа миллионером?
+    <br>
+    <input type=radio id="q4" name=Question value="4"> Нет
+    <br>
+    <br>
+    <input type="submit" value="Отправить">
+  </form>
+</body>
+</html>
